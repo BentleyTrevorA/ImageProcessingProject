@@ -1,0 +1,144 @@
+public class HW5
+{
+    private final int SIMPLE_SIN = 1;
+    private final int SIMPLE_COS = 2;
+    private final int SIMPLE_BOTH = 3;
+    private int s;
+    private int M;
+    private int type;
+
+    public void doSimpleSinGraph() {
+        s = 8;
+        M = 128;
+        type = SIMPLE_SIN;
+
+        String output = "";
+        for(int x=0; x<M; x++) {
+            output += x + "," + waveFunction(x) + "\n";
+        }
+
+        OperationsManager.writeFile("SimpleSin.csv", output);
+
+        plot(discreteFourierTransform());
+    }
+
+    public void doSimpleCosGraph() {
+        s = 8;
+        M = 128;
+        type = SIMPLE_COS;
+
+        String output = "";
+        for(int x=0; x<M; x++) {
+            output += x + "," + waveFunction(x) + "\n";
+        }
+
+        OperationsManager.writeFile("SimpleCos.csv", output);
+
+        plot(discreteFourierTransform());
+    }
+
+    public void doSimpleBothGraph() {
+        s = 8;
+        M = 128;
+        type = SIMPLE_BOTH;
+
+        String output = "";
+        for(int x=0; x<M; x++) {
+            output += x + "," + waveFunction(x) + "\n";
+        }
+
+        OperationsManager.writeFile("SimpleBoth.csv", output);
+
+        plot(discreteFourierTransform());
+    }
+
+    private void plot(FourierTransformResult fourier)
+    {
+
+        // Real Part
+        String output = "";
+        for (int u = 0; u < M; u++) {
+            double value = fourier.getReal(u);
+            output += u + "," + value + "\n";
+        }
+        writeFourierCSV("real", output);
+
+        // Imaginary Part
+        output = "";
+        for (int u = 0; u < M; u++) {
+            double value = fourier.getImaginary(u);
+            output += u + "," + value + "\n";
+        }
+        writeFourierCSV("imaginary", output);
+
+        // Magnitude
+        output = "";
+        for (int u = 0; u < M; u++) {
+            double value = fourier.getMagnitude(u);
+            output += u + "," + value + "\n";
+        }
+        writeFourierCSV("magnitude", output);
+
+        // Phase
+        output = "";
+        for (int u = 0; u < M; u++) {
+            double value = fourier.getPhase(u);
+            output += u + "," + value + "\n";
+        }
+        writeFourierCSV("phase", output);
+    }
+
+    private void writeFourierCSV(String prePendName, String contents) {
+        String fileName = prePendName;
+
+        if(type == SIMPLE_SIN) {
+            fileName += "SimpleSin";
+        }
+        if(type == SIMPLE_COS) {
+            fileName += "SimpleCos";
+        }
+        if(type == SIMPLE_BOTH) {
+            fileName += "SimpleBoth";
+        }
+        fileName += ".csv";
+
+        OperationsManager.writeFile(fileName, contents);
+    }
+
+    private FourierTransformResult discreteFourierTransform() {
+        FourierTransformResult result = new FourierTransformResult();
+
+        for (int u = 0; u < M; u++) {
+            double real = 0;
+            double imaginary = 0;
+
+            for (int x = 0; x < M; x++) {
+                double fX = waveFunction(x);
+                real += fX * Math.cos(2 * Math.PI * u * x / M);
+                imaginary -= fX * Math.sin(2 * Math.PI * u * x / M);
+            }
+
+            real /= M;
+            imaginary /= M;
+
+            result.addReal(real);
+            result.addImaginary(imaginary);
+        }
+
+        return result;
+    }
+
+    public double waveFunction(int t) {
+        if (type == SIMPLE_SIN) {
+            return Math.sin(2 * Math.PI * s * t / M);
+        }
+        if (type == SIMPLE_COS) {
+            return Math.cos(2 * Math.PI * s * t / M);
+        }
+        if (type == SIMPLE_BOTH) {
+            return Math.sin(2 * Math.PI * s * t / M) + Math.cos(2 * Math.PI * s * t / M);
+        }
+        else
+            return 0;
+    }
+}

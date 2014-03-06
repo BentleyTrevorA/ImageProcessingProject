@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class FourierTransformResult
+{
+    private List<Double> real, imaginary;
+
+    public FourierTransformResult()
+    {
+        real = new ArrayList<Double>();
+        imaginary = new ArrayList<Double>();
+    }
+
+    public void addReal(double value)
+    {
+        real.add(value);
+    }
+
+    public void addImaginary(double value)
+    {
+        imaginary.add(value);
+    }
+
+    public double getReal(int position)
+    {
+        return real.get(position);
+    }
+
+    public double getImaginary(int position)
+    {
+        return imaginary.get(position);
+    }
+}

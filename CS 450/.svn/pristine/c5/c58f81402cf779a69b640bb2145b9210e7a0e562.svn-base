@@ -1,0 +1,108 @@
+public class HW5
+{
+    private final int SIMPLE_SIN = 1;
+    private final int SIMPLE_COS = 2;
+    private final int SIMPLE_BOTH = 3;
+    private int s;
+    private int M;
+
+    public void doSimpleSinGraph() {
+        s = 8;
+        M = 128;
+        String output = "";
+        for(int x=0; x<M; x++) {
+            output += x + "," + waveFunction(SIMPLE_SIN, x) + "\n";
+        }
+
+        OperationsManager.writeFile("SimpleSin.csv", output);
+    }
+
+    public void doSimpleCosGraph() {
+        s = 8;
+        M = 128;
+        String output = "";
+        for(int x=0; x<M; x++) {
+            output += x + "," + waveFunction(SIMPLE_COS, x) + "\n";
+        }
+
+        OperationsManager.writeFile("SimpleCos.csv", output);
+    }
+
+    public void doDrawSinGraph() {
+        GraphDraw graph = new GraphDraw("f[t] = sin(2pi * s * t / N)");
+        s = 8;
+        M = 128;
+        for (int x = 0; x < M; x++) {
+            double value = waveFunction(SIMPLE_SIN, x);
+            graph.addNode("" + x, x * 5 + 10, (int) (value * 100));
+            if(x > 0)
+                graph.addEdge(x - 1, x);
+        }
+        graph.addAxis();
+
+        plot(discreteFourierTransform(SIMPLE_SIN));
+    }
+
+    private void plot(FourierTransformResult fourier)
+    {
+        GraphDraw graph = new GraphDraw("Real Part (* 10^-16)");
+        for (int u = 0; u < M; u++) {
+            double value = fourier.getReal(u) * Math.pow(10, 16);
+            graph.addNode("" + u, u * 5 + 10, (int) value);
+            if(u > 0)
+                graph.addEdge(u - 1, u);
+        }
+        graph.addAxis();
+
+        double max = 0;
+        GraphDraw graph2 = new GraphDraw("Imaginary Part (* 10^-14)");
+        for (int u = 0; u < M; u++) {
+            double value = fourier.getImaginary(u) * Math.pow(10, 14);
+            if(value > max) {
+                max = value;
+            System.out.println("" + u + "," + value);
+            }
+            graph2.addNode("" + u, u * 5 + 10, (int) value);
+            if(u > 0)
+                graph2.addEdge(u - 1, u);
+        }
+        graph2.addAxis();
+    }
+
+    private FourierTransformResult discreteFourierTransform(int type) {
+        FourierTransformResult result = new FourierTransformResult();
+
+        for (int u = 0; u < M; u++) {
+            double real = 0;
+            double imaginary = 0;
+
+            for (int x = 0; x < M; x++) {
+                double fX = waveFunction(type, x);
+                real += fX * Math.cos(2 * Math.PI * u * x / M);
+                imaginary -= fX * Math.sin(2 * Math.PI * u * x / M);
+            }
+
+            real /= M;
+            imaginary /= M;
+
+            result.addReal(real);
+            result.addImaginary(imaginary);
+        }
+
+        return result;
+    }
+
+    public double waveFunction(int type, int t) {
+        if (type == SIMPLE_SIN) {
+            return Math.sin(2 * Math.PI * s * t / M);
+        }
+        if (type == SIMPLE_COS) {
+            return Math.cos(2 * Math.PI * s * t / M);
+        }
+        if (type == SIMPLE_BOTH) {
+            return Math.sin(2 * Math.PI * s * t / M) + Math.cos(2 * Math.PI * s * t / M);
+        }
+        else
+            return 0;
+    }
+}
