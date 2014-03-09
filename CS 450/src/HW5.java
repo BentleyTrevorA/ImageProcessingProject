@@ -290,9 +290,9 @@ public class HW5
     // http://en.wikipedia.org/wiki/Transfer_function
     // Refer to img found from slides
     public void doTransferFunction() {
-        // g(t) = f(t) * h(t) = F(u)H(u)
-        // g(t) = F(u)H(u)
-        // H(u) = g(t)/F(u)
+        // g(t) = f(t) * h(t) <==> F(u)H(u) = G(u)
+        // F(u)H(u) = G(u)
+        // H(u) = G(u)/F(u)
 
         type = TRANSFER;
         data = OperationsManager.readDatFile("1D_Rect128.dat");
@@ -301,16 +301,9 @@ public class HW5
         s = 1;
         M = data.size();
 
+        // TODO: Fourier transform of g(t) (output)
+        // TODO: Fouriert transform of f(t) (input)
+        // TODO: H(u) = G(u) (real + imaginary) / F(u) (real: it has no imaginary part)
         FourierTransformResult result = discreteFourierTransformOfDistribution();
-
-
-        System.out.println("u, transferValue");
-        for(int i=0; i < M; i++) {
-            double transferValue = outputData.get(i) / result.getMagnitude(i);
-            transferFunction.add(transferValue);
-            System.out.println( i + "," + transferValue);
-        }
-
-
     }
 }

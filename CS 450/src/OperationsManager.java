@@ -62,7 +62,7 @@ public class OperationsManager
         BufferedWriter writer = null;
 
         try {
-            writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("csv\\" + fileName), "utf-8"));
+            writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileName), "utf-8"));
             writer.write(contents);
         }
         catch (IOException ex) {
