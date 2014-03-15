@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/8xPlus15yFT.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/8xPlus15ySignal.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/8xTimes15YFourier.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/8xTimes15YFunction.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/CombinedRotated.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/CombinedRotatedFT.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ball.pgm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cosines.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gull.pgm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/simpleSin25s.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/simpleSin25sFunction.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/simpleSin8s.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/simpleSin8sFunction.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/sinInY15sFourier.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2D Transforms/sinInY15sFunction.jpg" />
+    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="Up to part E completed.&#10;">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/ButtonHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/CS450.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/Driver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/FourierTransformResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW5$FrequencyResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HWBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/OperationsManager.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HW6.java" afterPath="$PROJECT_DIR$/src/HW6.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iws" afterPath="$PROJECT_DIR$/ImageProcessing.iws" />
     </list>
@@ -85,32 +83,18 @@
       <file leaf-file-name="HW6.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HW6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="28" selection-start="4229" selection-end="4229" vertical-scroll-proportion="0.20116618" vertical-offset="1827" max-vertical-offset="2820">
+            <state line="90" column="5" selection-start="2588" selection-end="2588" vertical-scroll-proportion="0.48066297" vertical-offset="165" max-vertical-offset="2340">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="method#plot2DFunction#0;class#HW6#0" expanded="false" />
+                <element signature="method#doFuncFourier#0;class#HW6#0" expanded="false" />
+                <element signature="method#doMakeImage#0;class#HW6#0" expanded="false" />
+                <element signature="method#scaleValue#0;class#HW6#0" expanded="false" />
+                <element signature="method#setTypeAndS#0;class#HW6#0" expanded="false" />
+                <element signature="method#getImageFourier#0;class#HW6#0" expanded="false" />
+                <element signature="method#plotFtMagnitude#0;class#HW6#0" expanded="false" />
+                <element signature="method#functionF#0;class#HW6#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HW1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HW1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="429" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HW.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HW.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="339" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2835">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -186,7 +170,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,7 +191,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,6 +332,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -373,19 +370,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -515,7 +499,11 @@
       <created>1394344948179</created>
       <updated>1394344948179</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Up to part E completed.">
+      <created>1394348304183</created>
+      <updated>1394348304183</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -527,25 +515,25 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40987125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26824033" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50429183" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22890624" sideWeight="0.60306644" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23497854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23497854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40987125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -566,7 +554,8 @@
     <MESSAGE value="Lab 5 pretty much done. Or at least as much as I'm willing to do at this point." />
     <MESSAGE value="Switched to use GIT in IntelliJ&#10;" />
     <MESSAGE value="Finally found a stupid FFT that works. Thank goodness&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally found a stupid FFT that works. Thank goodness&#10;" />
+    <MESSAGE value="Up to part E completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Up to part E completed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -576,20 +565,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
+    <entry file="file://$PROJECT_DIR$/src/HW6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840">
+        <state line="11" column="40" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="2340">
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#doFuncFourier#0;class#HW6#0" expanded="false" />
+            <element signature="method#doMakeImage#0;class#HW6#0" expanded="false" />
+            <element signature="method#scaleValue#0;class#HW6#0" expanded="false" />
+            <element signature="method#setTypeAndS#0;class#HW6#0" expanded="false" />
+            <element signature="method#getImageFourier#0;class#HW6#0" expanded="false" />
+            <element signature="method#plotFtMagnitude#0;class#HW6#0" expanded="false" />
+            <element signature="method#functionF#0;class#HW6#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HW5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="36" selection-start="6479" selection-end="6479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4830">
-          <folding />
-        </state>
+        <state line="223" column="36" selection-start="6479" selection-end="6479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4830" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Driver.java">
@@ -601,98 +601,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="294" column="27" selection-start="8968" selection-end="8968" vertical-scroll-proportion="0.0" vertical-offset="4410" max-vertical-offset="4830">
-          <folding />
-        </state>
+        <state line="294" column="27" selection-start="8968" selection-end="8968" vertical-scroll-proportion="0.0" vertical-offset="4410" max-vertical-offset="4830" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="290" column="27" selection-start="8827" selection-end="8827" vertical-scroll-proportion="0.0" vertical-offset="4162" max-vertical-offset="5117">
-          <folding />
-        </state>
+        <state line="290" column="27" selection-start="8827" selection-end="8827" vertical-scroll-proportion="0.0" vertical-offset="4162" max-vertical-offset="5117" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="37" selection-start="8692" selection-end="8692" vertical-scroll-proportion="0.0" vertical-offset="4391" max-vertical-offset="5049">
-          <folding />
-        </state>
+        <state line="286" column="37" selection-start="8692" selection-end="8692" vertical-scroll-proportion="0.0" vertical-offset="4391" max-vertical-offset="5049" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="38" selection-start="5836" selection-end="5836" vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="3672">
-          <folding />
-        </state>
+        <state line="195" column="38" selection-start="5836" selection-end="5836" vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="3672" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="30" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="952">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="35" column="30" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="952" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="38" selection-start="5836" selection-end="5836" vertical-scroll-proportion="0.0" vertical-offset="3109" max-vertical-offset="3672">
-          <folding />
-        </state>
+        <state line="195" column="38" selection-start="5836" selection-end="5836" vertical-scroll-proportion="0.0" vertical-offset="3109" max-vertical-offset="3672" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="30" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="952">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="35" column="30" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="952" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="48" selection-start="3604" selection-end="3604" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="1921">
-          <folding />
-        </state>
+        <state line="133" column="48" selection-start="3604" selection-end="3604" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="1921" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OperationsManager.java">
@@ -707,11 +671,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="952">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="27" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="952" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Driver.java">
@@ -776,18 +736,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="839" selection-end="839" vertical-scroll-proportion="0.016304348" vertical-offset="405" max-vertical-offset="5325">
-          <folding />
-        </state>
+        <state line="33" column="22" selection-start="839" selection-end="839" vertical-scroll-proportion="0.016304348" vertical-offset="405" max-vertical-offset="5325" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="15" selection-start="0" selection-end="1125" vertical-scroll-proportion="0.050962627" vertical-offset="0" max-vertical-offset="883">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="3" column="15" selection-start="0" selection-end="1125" vertical-scroll-proportion="0.050962627" vertical-offset="0" max-vertical-offset="883" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Driver.java">
@@ -799,65 +753,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FourierTransformResult2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
+        <state line="12" column="37" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/awt/image/WritableRaster.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="16" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
+        <state line="41" column="16" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="41" selection-start="3756" selection-end="3756" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="4725">
-          <folding />
-        </state>
+        <state line="136" column="41" selection-start="3756" selection-end="3756" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="4725" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OperationsManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="9" selection-start="2193" selection-end="2193" vertical-scroll-proportion="0.81546575" vertical-offset="646" max-vertical-offset="1245">
-          <folding />
-        </state>
+        <state line="76" column="9" selection-start="2193" selection-end="2193" vertical-scroll-proportion="0.81546575" vertical-offset="646" max-vertical-offset="1245" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ButtonHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="610" selection-end="610" vertical-scroll-proportion="0.4703833" vertical-offset="0" max-vertical-offset="574">
-          <folding />
-        </state>
+        <state line="22" column="0" selection-start="610" selection-end="610" vertical-scroll-proportion="0.4703833" vertical-offset="0" max-vertical-offset="574" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FFT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="40" selection-start="5843" selection-end="5843" vertical-scroll-proportion="0.0" vertical-offset="2305" max-vertical-offset="3225">
-          <folding />
-        </state>
+        <state line="188" column="40" selection-start="5843" selection-end="5843" vertical-scroll-proportion="0.0" vertical-offset="2305" max-vertical-offset="3225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyComplex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="22" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.2563536" vertical-offset="203" max-vertical-offset="2235">
-          <folding />
-        </state>
+        <state line="29" column="22" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.2563536" vertical-offset="203" max-vertical-offset="2235" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Complex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="35" selection-start="1577" selection-end="1586" vertical-scroll-proportion="-7.9259257" vertical-offset="491" max-vertical-offset="2370">
-          <folding />
-        </state>
+        <state line="47" column="35" selection-start="1577" selection-end="1586" vertical-scroll-proportion="-7.9259257" vertical-offset="491" max-vertical-offset="2370" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Fourier1D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-7.5" vertical-offset="300" max-vertical-offset="1695">
-          <folding />
-        </state>
+        <state line="48" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-7.5" vertical-offset="300" max-vertical-offset="1695" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Complex2.java">
@@ -867,36 +803,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fourier2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="18" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HW.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="339" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2835">
-          <folding />
-        </state>
+        <state line="15" column="4" selection-start="339" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2835" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="429" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="13" column="8" selection-start="429" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fourier2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="28" selection-start="3861" selection-end="3862" vertical-scroll-proportion="0.37016574" vertical-offset="1690" max-vertical-offset="2595" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="28" selection-start="4229" selection-end="4229" vertical-scroll-proportion="0.20116618" vertical-offset="1827" max-vertical-offset="2820">
+        <state line="90" column="5" selection-start="2588" selection-end="2588" vertical-scroll-proportion="0.48066297" vertical-offset="165" max-vertical-offset="2340">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#plot2DFunction#0;class#HW6#0" expanded="false" />
+            <element signature="method#doFuncFourier#0;class#HW6#0" expanded="false" />
+            <element signature="method#doMakeImage#0;class#HW6#0" expanded="false" />
+            <element signature="method#scaleValue#0;class#HW6#0" expanded="false" />
+            <element signature="method#setTypeAndS#0;class#HW6#0" expanded="false" />
+            <element signature="method#getImageFourier#0;class#HW6#0" expanded="false" />
+            <element signature="method#plotFtMagnitude#0;class#HW6#0" expanded="false" />
+            <element signature="method#functionF#0;class#HW6#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -47,7 +47,7 @@ public class HW6 {
 
         Complex2[][] ftData = ft2D.fft(sine);
 
-        plotFtAsImage(ftData, M, N);
+        plotFtMagnitude(ftData, M, N);
     }
 
     public void doMakeImage() {
@@ -110,13 +110,73 @@ public class HW6 {
         CS450.setImageB(functionPlot);
     }
 
-    public void doImgFourier()
+    public void doImgFourier() {
+
+        plotFtMagnitude(getImageFourier(), M, N);
+    }
+
+    public void doImgFourierSwap() {
+        Complex2[][] ftData_1 = getImageFourier(); // Ball
+        Complex2[][] ftData_2 = getImageFourier(); // Gull
+
+        Complex2[][] ftData_1WithPhase2 = imgWithOtherMagnitude(ftData_1, ftData_2); // Ball with Gull Phase
+        Complex2[][] ftData_2WithPhase1 = imgWithOtherMagnitude(ftData_2, ftData_1); // Gull with Ball Phase
+
+        Complex2[][] ifft1 = ft2D.ifft(ftData_1WithPhase2); // Ball with Gull Phase
+        Complex2[][] ifft2 = ft2D.ifft(ftData_2WithPhase1); // Gull with Ball Phase
+
+        BufferedImage outputA = new BufferedImage(M, N, BufferedImage.TYPE_INT_RGB);
+        WritableRaster outA = outputA.getRaster();
+
+        BufferedImage outputB = new BufferedImage(M, N, BufferedImage.TYPE_INT_RGB);
+        WritableRaster outB = outputB.getRaster();
+
+        for(int x=0; x<M; x++) {
+            for(int y=0; y<N; y++) {
+                double valueA = ifft1[x][y].real;
+                double valueB = ifft2[x][y].real;
+
+                outA.setSample(x, y, 0, valueA);
+                outA.setSample(x, y, 1, valueA);
+                outA.setSample(x, y, 2, valueA);
+
+                outB.setSample(x, y, 0, valueB);
+                outB.setSample(x, y, 1, valueB);
+                outB.setSample(x, y, 2, valueB);
+            }
+        }
+
+        CS450.setImageA(outputA); // Ball with Gull Phase
+        CS450.setImageB(outputB); // Gull with Ball Phase
+    }
+
+    public void doImageFourierBackAndForth()
     {
+        Complex2[][] ftData_1 = getImageFourier();
+        Complex2[][] ifft1 = ft2D.ifft(ftData_1);
+
+        BufferedImage outputB = new BufferedImage(M, N, BufferedImage.TYPE_INT_RGB);
+        WritableRaster outB = outputB.getRaster();
+
+        for(int x=0; x<M; x++) {
+            for(int y=0; y<N; y++) {
+                double valueB = ifft1[x][y].real;
+
+                outB.setSample(x, y, 0, valueB);
+                outB.setSample(x, y, 1, valueB);
+                outB.setSample(x, y, 2, valueB);
+            }
+        }
+
+        CS450.setImageB(outputB);
+    }
+
+    private Complex2[][] getImageFourier() {
         type = FROM_IMG;
 
         input = CS450.openImage();
         if (input == null) {
-            return;
+            return null;
         }
 
         CS450.setImageA(input);
@@ -134,19 +194,35 @@ public class HW6 {
             }
         }
 
-        Complex2[][] ftData = ft2D.fft(img);
+        return ft2D.fft(img);
+    }
 
-        plotFtAsImage(ftData, M, N);
+    // Return img_1 having paired it's Magnitude with img_2's phase
+    private Complex2[][] imgWithOtherMagnitude(Complex2[][] img_1, Complex2[][] img_2) {
+        Complex2[][] result = new Complex2[M][N];
+
+        for(int x = 0; x < M; x++) {
+            for (int y = 0; y < N; y++) {
+                double img_1Magnitude = img_1[x][y].Betrag();
+                double img_2Phase = img_2[x][y].Phase();
+
+                double newReal = img_1Magnitude * Math.cos(img_2Phase);
+                double newImag = img_1Magnitude * Math.sin(img_2Phase);
+
+                result[x][y] = new Complex2(newReal, newImag);
+            }
+        }
+
+        return result;
     }
 
     // Used for plotting Fourier Transform Data as an image
-    private void plotFtAsImage(Complex2[][] data, int width, int height) {
+    private void plotFtMagnitude(Complex2[][] data, int width, int height) {
         BufferedImage magnitudeImg = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 
         WritableRaster out = magnitudeImg.getRaster();
 
         double maxMagnitude = 0;
-        double maxPhase = 0;
 
         for (int v = 0; v < height; v++) {
             for (int u = 0; u < width; u++) {
