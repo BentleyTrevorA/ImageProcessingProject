@@ -1,21 +1,387 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="Up to part E completed.&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/ButtonHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/CS450.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/Driver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/FourierTransformResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW5$FrequencyResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HW5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/HWBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImageProcessing/OperationsManager.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HW6.java" afterPath="$PROJECT_DIR$/src/HW6.java" />
+    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="Added jigl library&#10;Added jai.jar files used in jigl library&#10;Added FilterShell code from course site&#10;Created HW7 class">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/AffineTransform.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/BadImageException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/BadSignalException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/BinaryImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/BinarySignal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/ByteSize.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/ByteSize.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Clip.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Clip.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/ClipNeg.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/ClipNeg.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/Close.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/Close.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/CloseableFrame.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/CloseableMainFrame.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ColorHistogram.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ColorImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ColorModelNotSupportedException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ColorModelNotSupportedException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ColorModelUnknownException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ColorModelUnknownException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/ColorSpace.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/Complex.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ComplexImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ComplexMIPMap$Threader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ComplexMIPMap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ComplexSignal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/Composite.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/ConnectedComponents.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/Convolve$Threader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/Convolve.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/Convolve.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/CumulativeHistogram.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/DifferentialGeometry.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/Dilate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/Dilate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/DiscreteSignal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/Dither.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/internal/DummyObserver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/Erode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/Erode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Exp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Exp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/FFT.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/FFT.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/FileExtensionNotSupportedException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/io/FileExtensionNotSupportedException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/ForwardFFT.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/ForwardFFT.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/GClose.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/GClose.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/GDilate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/GDilate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/GErode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/GErode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/GOpen.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/GOpen.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/GaussianNoise.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/GaussianNoise.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/GrayImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/Histogram.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/HistogramEqualizer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/IdentityMatrix.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/IdentityTransform.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/IllegalPBMFormatException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/io/IllegalPBMFormatException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/Image.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/ImageCanvas.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/ImageConverter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/ImageGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/ImageInputStream$ImageFileType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/ImageInputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/ImageInputStreamJAI.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ImageKernel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ImageNotSupportedException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/ImageOps.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/ImageOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/ImageOutputStreamJAI.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ImageSequence.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/IncompatibleImagesException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/IncompatibleSignalException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedColorImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedGrayImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedRealColorImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedRealGrayImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InvalidArgumentException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/InvalidCommandLineException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/InvalidCommandLineException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InvalidKernelException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/InvalidKernelException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/Inverse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/JImageCanvas.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/KdTree.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab 6 Trevor Bentley.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetNudge.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetSharpen.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetSmooth.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetTools.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/LocalDifferentialGeometry.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LocalMedianSmooth.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Log.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Log.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/LookupTable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/MIPMap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/MagnitudeImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/MagnitudeSignal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/Mapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/Matrix.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/Nearest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Negate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Negate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Negative.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Negative.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/NoiseDetectImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/NotHLSColorSpaceException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/NotHSVColorSpaceException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/Open.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/Open.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/Operator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/Operator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/PerspectiveTransform.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/PhaseImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/PhaseSignal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/PointMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/PoissonNoise.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/PoissonNoise.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/PowerImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/PowerSignal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/ProjectionMatrix.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ROI.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ROI.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/RealColorImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/RealGrayImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/RealSignal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/ReverseFFT.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/ReverseFFT.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/RotateAboutTransform.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/RotateTransform.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/RotationMatrix.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Scale.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Scale.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/ScaleMatrix.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/ScaleTransform.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/Scaler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/SequenceCanvas.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/Shift.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/Shift.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/Signal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/SignalCanvas.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/SignalConverter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/SignalGenerator$Orientation.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/SignalGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/io/SignalInputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/SignalKernel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/SignalNotSupportedException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/SignalOps.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/io/SignalOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/SimpleOperator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/SimpleOperator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Threshold.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Threshold.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/TiledComplexMIPMap$Threader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/TiledComplexMIPMap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/TiledImage$Tile.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/TiledImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/TiledMIPMap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/TranslateTransform.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/TranslationMatrix.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/UniformNoise.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/UniformNoise.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/UnknownImageTypeException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/UnknownSignalTypeException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/Vector.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedColorImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedGrayImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedRealColorImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedRealGrayImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Window.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Window.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jai_codec.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jai_core.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mlibwrapper_jai.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/vector_test.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/AffineTransform.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/BadImageException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/BadSignalException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/BinaryImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/BinarySignal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/ByteSize.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/ByteSize.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Clip.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Clip.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/ClipNeg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/ClipNeg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/Close.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/Close.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/CloseableFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/CloseableMainFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ColorHistogram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ColorImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ColorModelNotSupportedException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ColorModelNotSupportedException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ColorModelUnknownException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ColorModelUnknownException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/ColorSpace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/Complex.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ComplexImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ComplexMIPMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ComplexSignal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/Composite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/ConnectedComponents.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/Convolve.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/Convolve.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/CumulativeHistogram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/DifferentialGeometry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/Dilate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/Dilate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/DiscreteSignal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/Dither.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/internal/DummyObserver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/Erode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/Erode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Exp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Exp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/FFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/FFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/FileExtensionNotSupportedException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/io/FileExtensionNotSupportedException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FilterShell.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/ForwardFFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/ForwardFFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/GClose.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/GClose.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/GDilate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/GDilate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/GErode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/GErode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/GOpen.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/GOpen.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/GaussianNoise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/GaussianNoise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/GrayImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HW7.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/Histogram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/HistogramEqualizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/IdentityMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/IdentityTransform.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/IllegalPBMFormatException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/io/IllegalPBMFormatException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/Image.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/ImageCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/ImageConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/ImageGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/ImageInputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/ImageInputStreamJAI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ImageKernel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ImageNotSupportedException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/ImageOps.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/ImageOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/ImageOutputStreamJAI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ImageSequence.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/IncompatibleImagesException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/IncompatibleSignalException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedColorImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedGrayImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedRealColorImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InterpolatedRealGrayImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InvalidArgumentException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/InvalidCommandLineException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/InvalidCommandLineException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/InvalidKernelException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/InvalidKernelException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/Inverse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/JImageCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/KdTree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetNudge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetSharpen.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetSmooth.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetTools.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/LocalDifferentialGeometry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/LocalMedianSmooth.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Log.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Log.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/LookupTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/MIPMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/MagnitudeImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/MagnitudeSignal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/Mapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/Matrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/Nearest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Negate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Negate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Negative.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Negative.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/NoiseDetectImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/NotHLSColorSpaceException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/NotHSVColorSpaceException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/Open.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/Open.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/Operator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/Operator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/PerspectiveTransform.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/PhaseImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/PhaseSignal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/PointMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/PoissonNoise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/PoissonNoise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/PowerImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/PowerSignal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/ProjectionMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ROI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ROI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/RealColorImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/RealGrayImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/RealSignal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/ReverseFFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/ReverseFFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/RotateAboutTransform.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/RotateTransform.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/RotationMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Scale.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Scale.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/ScaleMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/ScaleTransform.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/Scaler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/SequenceCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/Shift.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/Shift.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/Signal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/SignalCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/SignalConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/SignalGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/io/SignalInputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/SignalKernel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/SignalNotSupportedException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/SignalOps.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/io/SignalOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/SimpleOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/SimpleOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Threshold.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Threshold.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/TiledComplexMIPMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/TiledImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/TiledMIPMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/TranslateTransform.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/TranslationMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/UniformNoise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/UniformNoise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/UnknownImageTypeException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/UnknownSignalTypeException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/Vector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedColorImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedGrayImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedRealColorImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/WarpedRealGrayImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/Window.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/Window.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/gui/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/io/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/levelSetTool/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/levelOps/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/ops/morph/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/utils/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/image/warp/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/internal/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/io/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/levelOps/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/ops/morph/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/signal/utils/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jigl/math/vector_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iml" afterPath="$PROJECT_DIR$/ImageProcessing.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iws" afterPath="$PROJECT_DIR$/ImageProcessing.iws" />
     </list>
     <ignored path="ImageProcessing.iws" />
@@ -80,21 +446,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HW6.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/HW6.java">
+      <file leaf-file-name="DiscreteSignal.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jigl/signal/DiscreteSignal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="5" selection-start="2588" selection-end="2588" vertical-scroll-proportion="0.48066297" vertical-offset="165" max-vertical-offset="2340">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="method#doFuncFourier#0;class#HW6#0" expanded="false" />
-                <element signature="method#doMakeImage#0;class#HW6#0" expanded="false" />
-                <element signature="method#scaleValue#0;class#HW6#0" expanded="false" />
-                <element signature="method#setTypeAndS#0;class#HW6#0" expanded="false" />
-                <element signature="method#getImageFourier#0;class#HW6#0" expanded="false" />
-                <element signature="method#plotFtMagnitude#0;class#HW6#0" expanded="false" />
-                <element signature="method#functionF#0;class#HW6#0" expanded="false" />
-              </folding>
+            <state line="65" column="6" selection-start="1970" selection-end="1970" vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="14235">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColorImage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jigl/image/ColorImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="101" column="6" selection-start="2803" selection-end="2803" vertical-scroll-proportion="0.0" vertical-offset="1118" max-vertical-offset="21390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HW7.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HW7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Histogram.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jigl/image/Histogram.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="194" column="6" selection-start="6591" selection-end="6591" vertical-scroll-proportion="0.0" vertical-offset="2558" max-vertical-offset="4410">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageSequence.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jigl/image/ImageSequence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="145" column="6" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.0" vertical-offset="1778" max-vertical-offset="2715">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LevelSetSmooth.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetSmooth.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="138" column="11" selection-start="4193" selection-end="4193" vertical-scroll-proportion="0.0" vertical-offset="1688" max-vertical-offset="6270">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LookupTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jigl/image/ops/levelOps/LookupTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="56" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1740">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageOutputStream.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jigl/image/io/ImageOutputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="111" column="6" selection-start="2768" selection-end="2768" vertical-scroll-proportion="0.0" vertical-offset="1133" max-vertical-offset="6090">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignalInputStream.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jigl/signal/io/SignalInputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="17" selection-start="3055" selection-end="3055" vertical-scroll-proportion="0.0" vertical-offset="1118" max-vertical-offset="6165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignalOutputStream.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jigl/signal/io/SignalOutputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="137" column="50" selection-start="3730" selection-end="3730" vertical-scroll-proportion="0.6884273" vertical-offset="1478" max-vertical-offset="2805">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,6 +572,27 @@
         <option value="$PROJECT_DIR$/src/Complex2.java" />
         <option value="$PROJECT_DIR$/src/Fourier2D.java" />
         <option value="$PROJECT_DIR$/src/HW6.java" />
+        <option value="$PROJECT_DIR$/src/FilterShell.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/io/ImageInputStreamJAI.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/TiledComplexMIPMap.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/ops/Shift.java" />
+        <option value="$PROJECT_DIR$/src/jigl/signal/ops/ReverseFFT.java" />
+        <option value="$PROJECT_DIR$/src/jigl/signal/BinarySignal.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/warp/PointMapper.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/warp/Mapper.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/RealColorImage.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/Image.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/io/ImageOutputStreamJAI.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/RealGrayImage.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/GrayImage.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/ColorImage.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/Histogram.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/ImageSequence.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetSmooth.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/ops/levelOps/LookupTable.java" />
+        <option value="$PROJECT_DIR$/src/jigl/image/io/ImageOutputStream.java" />
+        <option value="$PROJECT_DIR$/src/jigl/signal/io/SignalInputStream.java" />
+        <option value="$PROJECT_DIR$/src/jigl/signal/io/SignalOutputStream.java" />
       </list>
     </option>
   </component>
@@ -189,6 +647,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageProcessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 450" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -202,7 +674,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode.Groovy" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ImageProcessing.ipr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mlibwrapper_jai.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -215,7 +687,7 @@
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="SearchEverywhereHistory" value="" />
   </component>
-  <component name="RunManager" selected="Application.Driver">
+  <component name="RunManager" selected="Application.FilterShell">
     <configuration default="false" name="HW2" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="HW2" />
       <option name="VM_PARAMETERS" />
@@ -298,6 +770,22 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="FilterShell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FilterShell" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ImageProcessing" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -332,19 +820,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -370,6 +845,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -425,18 +913,20 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.HW2" />
       <item index="1" class="java.lang.String" itemvalue="Application.Driver" />
       <item index="2" class="java.lang.String" itemvalue="Application.testGraphDraw" />
       <item index="3" class="java.lang.String" itemvalue="Application.FFT" />
+      <item index="4" class="java.lang.String" itemvalue="Application.FilterShell" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Driver" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FFT" />
-        <item index="2" class="java.lang.String" itemvalue="Application.testGraphDraw" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HW2" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.FilterShell" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Driver" />
+        <item index="2" class="java.lang.String" itemvalue="Application.FFT" />
+        <item index="3" class="java.lang.String" itemvalue="Application.testGraphDraw" />
+        <item index="4" class="java.lang.String" itemvalue="Application.HW2" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -503,7 +993,11 @@
       <created>1394348304183</created>
       <updated>1394348304183</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lab 6 completed&#10;">
+      <created>1394845144968</created>
+      <updated>1394845144968</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -515,11 +1009,13 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40987125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50429183" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5858369" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -530,8 +1026,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40987125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -555,7 +1049,9 @@
     <MESSAGE value="Switched to use GIT in IntelliJ&#10;" />
     <MESSAGE value="Finally found a stupid FFT that works. Thank goodness&#10;" />
     <MESSAGE value="Up to part E completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Up to part E completed." />
+    <MESSAGE value="Lab 6 completed&#10;" />
+    <MESSAGE value="Added jigl library&#10;Added jai.jar files used in jigl library&#10;Added FilterShell code from course site&#10;Created HW7 class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jigl library&#10;Added jai.jar files used in jigl library&#10;Added FilterShell code from course site&#10;Created HW7 class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -565,125 +1061,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/HW6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="2340">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#doFuncFourier#0;class#HW6#0" expanded="false" />
-            <element signature="method#doMakeImage#0;class#HW6#0" expanded="false" />
-            <element signature="method#scaleValue#0;class#HW6#0" expanded="false" />
-            <element signature="method#setTypeAndS#0;class#HW6#0" expanded="false" />
-            <element signature="method#getImageFourier#0;class#HW6#0" expanded="false" />
-            <element signature="method#plotFtMagnitude#0;class#HW6#0" expanded="false" />
-            <element signature="method#functionF#0;class#HW6#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="36" selection-start="6479" selection-end="6479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4830" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="294" column="27" selection-start="8968" selection-end="8968" vertical-scroll-proportion="0.0" vertical-offset="4410" max-vertical-offset="4830" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="290" column="27" selection-start="8827" selection-end="8827" vertical-scroll-proportion="0.0" vertical-offset="4162" max-vertical-offset="5117" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="37" selection-start="8692" selection-end="8692" vertical-scroll-proportion="0.0" vertical-offset="4391" max-vertical-offset="5049" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="38" selection-start="5836" selection-end="5836" vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="3672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="30" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="38" selection-start="5836" selection-end="5836" vertical-scroll-proportion="0.0" vertical-offset="3109" max-vertical-offset="3672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="30" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="48" selection-start="3604" selection-end="3604" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="1921" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OperationsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="35" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0" vertical-offset="232" max-vertical-offset="1445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS450.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="25" selection-start="6458" selection-end="6458" vertical-scroll-proportion="0.0" vertical-offset="3621" max-vertical-offset="3961" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FourierTransformResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="323" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="8" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="1802" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HW2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -820,7 +1197,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="5" selection-start="2588" selection-end="2588" vertical-scroll-proportion="0.48066297" vertical-offset="165" max-vertical-offset="2340">
+        <state line="9" column="5" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2340">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -832,6 +1209,183 @@
             <element signature="method#plotFtMagnitude#0;class#HW6#0" expanded="false" />
             <element signature="method#functionF#0;class#HW6#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FilterShell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="41" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/BadImageException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="850" selection-end="850" vertical-scroll-proportion="0.10033445" vertical-offset="0" max-vertical-offset="598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/io/ImageInputStreamJAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3090">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/TiledComplexMIPMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="59" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8130">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/ops/Shift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="18" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="2310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/signal/ops/ReverseFFT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="49" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/signal/BinarySignal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="47" selection-start="3020" selection-end="3020" vertical-scroll-proportion="0.0" vertical-offset="1398" max-vertical-offset="3360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/warp/PointMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="65" selection-start="1928" selection-end="1928" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/warp/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="29" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="2850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/RealColorImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="805" column="11" selection-start="20810" selection-end="20810" vertical-scroll-proportion="-3.0892856" vertical-offset="11557" max-vertical-offset="21285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="6" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/io/ImageOutputStreamJAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="39" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.0" vertical-offset="1203" max-vertical-offset="6105">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/RealGrayImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1043" column="11" selection-start="25002" selection-end="25002" vertical-scroll-proportion="-3.017857" vertical-offset="15191" max-vertical-offset="16245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/GrayImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1013" column="17" selection-start="23799" selection-end="23799" vertical-scroll-proportion="-3.0892856" vertical-offset="15022" max-vertical-offset="16290">
+          <folding>
+            <element signature="e#0#25336#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/signal/DiscreteSignal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="6" selection-start="1970" selection-end="1970" vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="14235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/ColorImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="6" selection-start="2803" selection-end="2803" vertical-scroll-proportion="0.0" vertical-offset="1118" max-vertical-offset="21390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HW7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="6" selection-start="6591" selection-end="6591" vertical-scroll-proportion="0.0" vertical-offset="2558" max-vertical-offset="4410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/ImageSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="6" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.0" vertical-offset="1778" max-vertical-offset="2715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/levelSetTool/LevelSetSmooth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="11" selection-start="4193" selection-end="4193" vertical-scroll-proportion="0.0" vertical-offset="1688" max-vertical-offset="6270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/ops/levelOps/LookupTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="56" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/image/io/ImageOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="6" selection-start="2768" selection-end="2768" vertical-scroll-proportion="0.0" vertical-offset="1133" max-vertical-offset="6090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/signal/io/SignalInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="17" selection-start="3055" selection-end="3055" vertical-scroll-proportion="0.0" vertical-offset="1118" max-vertical-offset="6165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jigl/signal/io/SignalOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="50" selection-start="3730" selection-end="3730" vertical-scroll-proportion="0.6884273" vertical-offset="1478" max-vertical-offset="2805">
+          <folding />
         </state>
       </provider>
     </entry>
