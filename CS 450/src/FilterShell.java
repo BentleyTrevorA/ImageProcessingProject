@@ -6,8 +6,9 @@ public class FilterShell {
     public static void main(String args[])
     {
         try {
-            String inFileName = args[0];
-            String outFileName = args[1];
+//            String inFileName = "\\home\\vandal\\GIT\\450 Projects\\dat\\1D_Noise.dat";
+            String inFileName = "img/2D_White_Box2.pgm";
+            String outFileName = "img/output/fixed.pgm";
 
             // Read in the file
             ImageInputStream infile = new ImageInputStream(inFileName);
@@ -17,8 +18,8 @@ public class FilterShell {
             ComplexImage spectrum = jigl.image.utils.FFT.forward(im);
             spectrum.divide(im.X()*im.Y(),0);
 
-            // do the filtering here by multiplying the values in "spectrum"
-            // by the desired filter
+            // do the filtering here by multiplying the values in "spectrum" by the desired filter
+
 
             // Invert the FFT
             ComplexImage outc = jigl.image.utils.FFT.reverse(spectrum);

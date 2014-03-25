@@ -6,7 +6,7 @@ public class OperationsManager
 {
     public static List<Double> readDatFile(String fileName) {
         try {
-            FileReader fileReader = new FileReader("dat\\" + fileName);
+            FileReader fileReader = new FileReader("dat/" + fileName);
             BufferedReader reader = new BufferedReader(fileReader);
 
             ArrayList<Double> data = new ArrayList<Double>();
