@@ -15,9 +15,10 @@ import java.util.List;
 public class HW7 {
 
     public static void main(String[] args) {
-//        doButterWorthLowPassFilter1D();
-        do2DSpacialAveraging();
-//        do2DSpacialAveraging2();
+//        doButterWorthLowPassFilter1D();               // Part A
+//        do2DSpacialAveraging();                       // Part B - Uses FilterShell
+//        do2DSpacialAveraging2();                      // Part B - Implementation 2 - Uses Fourier2D and Complex2[][]
+        doInterferenceRemoval("img/interfere.pgm");   // Part C
     }
 
     private static void doButterWorthLowPassFilter1D() {
@@ -54,7 +55,6 @@ public class HW7 {
 
     private static void do2DSpacialAveraging() {
         try {
-//            String inFileName = "img/2D_White_Box3.pgm";
             String fileName = "2D_White_Box3";
             String inFileName = "img/" + fileName + ".pgm";
             String outFileName = "img/output/" + fileName + "-Filtered.pgm";
@@ -69,7 +69,6 @@ public class HW7 {
 
             // do the filtering here by multiplying the values in "spectrum" by the desired filter
             doButterWorth2D(spectrum);
-//            doGaussianLowPass2D(spectrum);
 
             // Invert the FFT
             ComplexImage outComplex = jigl.image.utils.FFT.reverse(spectrum);
@@ -118,20 +117,6 @@ public class HW7 {
 //                    frequencySpectrumImage.setReal(u, v, 0);
 //                    frequencySpectrumImage.setImag(u, v, 0);
 //                }
-            }
-        }
-    }
-
-    // http://www.originlab.com/www/helponline/origin/en/UserGuide/Algorithm_(2D_FFT_Filters).html
-    private static void doGaussianLowPass2D(ComplexImage frequencySpectrumImage)
-    {
-        double frequencyCutoff = 10; // D0 = cutoff
-
-        for (int u = 0; u < frequencySpectrumImage.X(); u++) {
-            for (int v = 0; v < frequencySpectrumImage.Y(); v++) {
-                double rSquared = u * u + v * v; // r = sqrt(u^2 + v^2)
-                float Hu = (float)Math.exp(-1 * rSquared / (2 * frequencyCutoff * frequencyCutoff));
-                frequencySpectrumImage.multiply(u, v, Hu, 1);
             }
         }
     }
@@ -239,5 +224,128 @@ public class HW7 {
         }
 
         return frequencySpectrumImage;
+    }
+
+    /* *********************************************
+     *              Interference Pattern
+     ********************************************* */
+    private static void doInterferenceRemoval(String filePath) {
+        try {
+            File file = new File(filePath);
+            BufferedImage input =  ImageIO.read(file);
+            if (input == null) {
+                return;
+            }
+
+            WritableRaster in = input.getRaster();
+
+            int M = input.getWidth();
+            int N = input.getHeight();
+
+            Fourier2D ft2D = new Fourier2D(M, N);
+
+            Complex2[][] img = new Complex2[M][N];
+            for(int y = 0; y < N; y++) {
+                for(int x = 0; x < M; x++) {
+                    img[x][y] = new Complex2(in.getSample(x, y, 0), 0);
+                }
+            }
+
+            Complex2[][] fft = ft2D.fft(img);
+
+            for (int u = 2; u < M/2 - 2; u++) {
+                for (int v = 2; v < N/2 - 2; v++) {
+                    Complex2 temp = fft[u][v];
+                    double mSquared = temp.magnitudeSquared();
+
+                    double averageMagnitude = 0;
+                    averageMagnitude += fft[u-1][v-1].magnitudeSquared();
+                    averageMagnitude += fft[u-1][v].magnitudeSquared();
+                    averageMagnitude += fft[u-1][v+1].magnitudeSquared();
+
+                    averageMagnitude += fft[u][v+1].magnitudeSquared();
+                    averageMagnitude += fft[u][v-1].magnitudeSquared();
+
+                    averageMagnitude += fft[u+1][v-1].magnitudeSquared();
+                    averageMagnitude += fft[u+1][v].magnitudeSquared();
+                    averageMagnitude += fft[u+1][v+1].magnitudeSquared();
+
+                    averageMagnitude /= 8;
+
+                    if(mSquared - averageMagnitude > 10) {
+                        System.out.println("("+u+","+v+") magnitude: " + mSquared + " average: " + averageMagnitude);
+
+                        Complex2 average = new Complex2(0,0);
+                        average.add(fft[u-1][v-1]);
+                        average.add(fft[u-1][v]);
+                        average.add(fft[u-1][v+1]);
+
+                        average.add(fft[u][v+1]);
+                        average.add(fft[u][v-1]);
+
+                        average.add(fft[u+1][v-1]);
+                        average.add(fft[u+1][v]);
+                        average.add(fft[u+1][v+1]);
+
+                        average.mult(1.0/8);
+
+                        fft[u][v] = average;
+                        fft[M-u][N-v] = average;
+                    }
+                }
+            }
+            plot2DFunction(ft2D.ifft(fft), M, N);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    // Used for plotting Fourier Transform Data as an image
+    private static void plotFtMagnitude(Complex2[][] data, int width, int height) {
+        BufferedImage magnitudeImg = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+
+        WritableRaster out = magnitudeImg.getRaster();
+
+        double maxMagnitude = 0;
+
+        for (int v = 0; v < height; v++) {
+            for (int u = 0; u < width; u++) {
+                Complex2 value = data[u][v];
+                double magnitude = value.Betrag();
+
+                if(magnitude > maxMagnitude) {
+                    maxMagnitude = magnitude;
+                }
+            }
+        }
+
+        for (int v = 0; v < height; v++) {
+            for (int u = 0; u < width; u++) {
+                int shiftedU = u;
+                int shiftedV = v;
+
+                // Get points centered around the middle of the image
+                if(shiftedU >= (width / 2))
+                    shiftedU -= width;
+                shiftedU += (width / 2);
+
+                if(shiftedV >= (height / 2))
+                    shiftedV -= height;
+                shiftedV += (height / 2);
+
+                Complex2 value = data[u][v];
+
+                // Scale values
+                double magnitude = (value.Betrag() / maxMagnitude) * 255;
+
+                out.setSample(shiftedU, shiftedV, 0, magnitude);
+                out.setSample(shiftedU, shiftedV, 1, magnitude);
+                out.setSample(shiftedU, shiftedV, 2, magnitude);
+            }
+        }
+
+        CS450.saveImage(magnitudeImg);
     }
 }

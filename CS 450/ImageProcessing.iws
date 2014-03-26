@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/2D_White_Box2.pgm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/BallWithGullPhase.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/GullWithBallPhase.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/interfere.pgm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dat/1D_Noise.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FilterShell.java" afterPath="$PROJECT_DIR$/src/FilterShell.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Complex2.java" afterPath="$PROJECT_DIR$/src/Complex2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HW7.java" afterPath="$PROJECT_DIR$/src/HW7.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iws" afterPath="$PROJECT_DIR$/ImageProcessing.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OperationsManager.java" afterPath="$PROJECT_DIR$/src/OperationsManager.java" />
     </list>
     <ignored path="ImageProcessing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,8 +59,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/HW7.java" line="217" class="HW7" package="">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/HW7.java" line="202" class="HW7" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/HW7.java" line="289" class="HW7" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -94,17 +103,24 @@
       <file leaf-file-name="HW7.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HW7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="0" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.30165747" vertical-offset="177" max-vertical-offset="1095">
+            <state line="20" column="63" selection-start="790" selection-end="790" vertical-scroll-proportion="0.49019608" vertical-offset="0" max-vertical-offset="3660">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#doButterWorthLowPassFilter1D#0;class#HW7#0" expanded="false" />
-                <element signature="method#do2DSpacialAveraging#0;class#HW7#0" expanded="false" />
-                <element signature="method#doButterWorth2D#0;class#HW7#0" expanded="false" />
+                <element signature="method#do2DSpacialAveraging2#0;class#HW7#0" expanded="false" />
                 <element signature="method#getFilteredImage#0;class#HW7#0" expanded="false" />
-                <element signature="method#plot2DFunction#0;class#HW7#0" expanded="false" />
                 <element signature="method#doButterWorth2D#1;class#HW7#0" expanded="false" />
                 <element signature="method#doGaussianLowPass2D2#0;class#HW7#0" expanded="false" />
+                <element signature="method#plotFtMagnitude#0;class#HW7#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CS450.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CS450.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="181" column="23" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.0" vertical-offset="2391" max-vertical-offset="3375">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,9 +157,7 @@
         <option value="$PROJECT_DIR$/src/Complex.java" />
         <option value="$PROJECT_DIR$/src/FFT.java" />
         <option value="$PROJECT_DIR$/src/Fourier1D.java" />
-        <option value="$PROJECT_DIR$/src/Complex2.java" />
         <option value="$PROJECT_DIR$/src/Fourier2D.java" />
-        <option value="$PROJECT_DIR$/src/HW6.java" />
         <option value="$PROJECT_DIR$/src/jigl/image/io/ImageInputStreamJAI.java" />
         <option value="$PROJECT_DIR$/src/jigl/image/TiledComplexMIPMap.java" />
         <option value="$PROJECT_DIR$/src/jigl/image/ops/Shift.java" />
@@ -166,6 +180,8 @@
         <option value="$PROJECT_DIR$/src/jigl/signal/io/SignalOutputStream.java" />
         <option value="$PROJECT_DIR$/src/FilterShell.java" />
         <option value="$PROJECT_DIR$/src/OperationsManager.java" />
+        <option value="$PROJECT_DIR$/src/HW6.java" />
+        <option value="$PROJECT_DIR$/src/Complex2.java" />
         <option value="$PROJECT_DIR$/src/HW7.java" />
       </list>
     </option>
@@ -202,7 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,6 +252,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -394,6 +410,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -419,19 +448,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -575,7 +591,11 @@
       <created>1395528636547</created>
       <updated>1395528636547</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Part B of Lab 7 Done">
+      <created>1395725463570</created>
+      <updated>1395725463570</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -589,7 +609,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60622317" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2972103" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3916309" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -600,12 +620,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22890624" sideWeight="0.60306644" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3143777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3143777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -629,7 +649,8 @@
     <MESSAGE value="Up to part E completed." />
     <MESSAGE value="Lab 6 completed&#10;" />
     <MESSAGE value="Added jigl library&#10;Added jai.jar files used in jigl library&#10;Added FilterShell code from course site&#10;Created HW7 class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jigl library&#10;Added jai.jar files used in jigl library&#10;Added FilterShell code from course site&#10;Created HW7 class" />
+    <MESSAGE value="Part B of Lab 7 Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part B of Lab 7 Done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -719,13 +740,6 @@
     <entry file="file://$PROJECT_DIR$/src/Fourier1D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-7.5" vertical-offset="300" max-vertical-offset="1695" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Complex2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="22" selection-start="2452" selection-end="2452" vertical-scroll-proportion="-9.111111" vertical-offset="1089" max-vertical-offset="2235">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW.java">
@@ -867,45 +881,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="2926" selection-end="2926" vertical-scroll-proportion="0.3529412" vertical-offset="714" max-vertical-offset="2505">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#doFuncFourier#0;class#HW6#0" expanded="false" />
-            <element signature="method#doMakeImage#0;class#HW6#0" expanded="false" />
-            <element signature="method#setTypeAndS#0;class#HW6#0" expanded="false" />
-            <element signature="method#doImgFourierSwap#0;class#HW6#0" expanded="false" />
-            <element signature="method#plotFtMagnitude#0;class#HW6#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS450.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="16" selection-start="5069" selection-end="5108" vertical-scroll-proportion="0.45588234" vertical-offset="2106" max-vertical-offset="3375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jigl/image/ComplexImage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="504" column="18" selection-start="11800" selection-end="11800" vertical-scroll-proportion="0.40686274" vertical-offset="6981" max-vertical-offset="13500" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OperationsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="23" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.3872549" vertical-offset="633" max-vertical-offset="1245">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FilterShell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="17" selection-start="157" selection-end="1324" vertical-scroll-proportion="0.8333333" vertical-offset="45" max-vertical-offset="735">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -917,18 +902,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/OperationsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="23" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.3872549" vertical-offset="633" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HW6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="41" selection-start="6272" selection-end="6272" vertical-scroll-proportion="0.8088235" vertical-offset="1455" max-vertical-offset="3105">
+          <folding>
+            <element signature="method#doFuncFourier#0;class#HW6#0" expanded="false" />
+            <element signature="method#doMakeImage#0;class#HW6#0" expanded="false" />
+            <element signature="method#setTypeAndS#0;class#HW6#0" expanded="false" />
+            <element signature="method#doImgFourierSwap#0;class#HW6#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Complex2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="20" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.33333334" vertical-offset="771" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CS450.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="23" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.0" vertical-offset="2391" max-vertical-offset="3375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HW7.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.30165747" vertical-offset="177" max-vertical-offset="1095">
+        <state line="20" column="63" selection-start="790" selection-end="790" vertical-scroll-proportion="0.49019608" vertical-offset="0" max-vertical-offset="3660">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#doButterWorthLowPassFilter1D#0;class#HW7#0" expanded="false" />
-            <element signature="method#do2DSpacialAveraging#0;class#HW7#0" expanded="false" />
-            <element signature="method#doButterWorth2D#0;class#HW7#0" expanded="false" />
+            <element signature="method#do2DSpacialAveraging2#0;class#HW7#0" expanded="false" />
             <element signature="method#getFilteredImage#0;class#HW7#0" expanded="false" />
-            <element signature="method#plot2DFunction#0;class#HW7#0" expanded="false" />
             <element signature="method#doButterWorth2D#1;class#HW7#0" expanded="false" />
             <element signature="method#doGaussianLowPass2D2#0;class#HW7#0" expanded="false" />
+            <element signature="method#plotFtMagnitude#0;class#HW7#0" expanded="false" />
           </folding>
         </state>
       </provider>

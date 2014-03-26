@@ -96,6 +96,10 @@ public class Complex2 {
         return Math.sqrt(z.real*z.real + z.imag*z.imag);
     }
 
+    public double magnitudeSquared() {
+        return this.real*this.real + this.imag*this.imag;
+    }
+
     /** return the phase (angle in polar coordinates) */
     public double Phase() {
         double phase;
