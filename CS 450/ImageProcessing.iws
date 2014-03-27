@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="Part 1 of Lab 8 Completed - Magnify Image">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HW8.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Driver.java" afterPath="$PROJECT_DIR$/src/Driver.java" />
+    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="Part 2 of Lab 8 Completed - Shrink Image">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/2D_WB.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/2D_White_Box3-Filtered.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/2D_White_Box3.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/2D_White_Box_Padded.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/2parrots.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/3parrots.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/FixedInterference.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/Output.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/Output2.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/Output3.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/blocks2.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/gull-Filtered.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/gull.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/gullBlurred.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/imageTest2.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/imageTest2.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/imageTest2_4.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/imageTest2_8.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/imageTest3.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/imageTest3.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/imageTest3_4.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/imageTest3_8.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/imageTest4.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/imageTest4.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/imageTest4_4.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/imageTest4_8.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/interfere-Filtered.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/parrots4.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/parrots8.pgm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/parrots.pgm" afterPath="$PROJECT_DIR$/img/parrots.pgm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HW8.java" afterPath="$PROJECT_DIR$/src/HW8.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iws" afterPath="$PROJECT_DIR$/ImageProcessing.iws" />
     </list>
     <ignored path="ImageProcessing.iws" />
@@ -103,7 +132,7 @@
       <file leaf-file-name="HW8.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HW8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="24" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.41257668" vertical-offset="871" max-vertical-offset="2055">
+            <state line="86" column="25" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.54924875" vertical-offset="961" max-vertical-offset="1965">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -234,6 +263,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageProcessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 450" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -586,7 +629,11 @@
       <created>1395801749428</created>
       <updated>1395801749428</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Part 1 of Lab 8 Completed - Magnify Image">
+      <created>1395884990091</created>
+      <updated>1395884990091</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -603,14 +650,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25751072" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25751072" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22890624" sideWeight="0.60306644" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3143777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3143777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -941,7 +988,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="24" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.41257668" vertical-offset="871" max-vertical-offset="2055">
+        <state line="86" column="25" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.54924875" vertical-offset="961" max-vertical-offset="1965">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
