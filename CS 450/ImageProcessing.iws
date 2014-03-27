@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab 7 Trevor Bentley.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/parrots15Rot1Time.pgm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/output/parrots15Rot8Times.pgm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HW8.java" afterPath="$PROJECT_DIR$/src/HW8.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iws" afterPath="$PROJECT_DIR$/ImageProcessing.iws" />
     </list>
@@ -105,10 +102,9 @@
       <file leaf-file-name="HW8.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HW8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="37" selection-start="4567" selection-end="4567" vertical-scroll-proportion="0.6127451" vertical-offset="855" max-vertical-offset="2010">
+            <state line="56" column="29" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.22058824" vertical-offset="705" max-vertical-offset="2685">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#doShrink_Image#0;class#HW8#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -629,7 +625,11 @@
       <created>1395887629785</created>
       <updated>1395887629785</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Part 3 of Lab 8 Completed - Rotate Image">
+      <created>1395889231148</created>
+      <updated>1395889231148</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -687,7 +687,8 @@
     <MESSAGE value="Lab 7 Coding done" />
     <MESSAGE value="Part 1 of Lab 8 Completed - Magnify Image" />
     <MESSAGE value="Part 2 of Lab 8 Completed - Shrink Image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 2 of Lab 8 Completed - Shrink Image" />
+    <MESSAGE value="Part 3 of Lab 8 Completed - Rotate Image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 3 of Lab 8 Completed - Rotate Image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -985,10 +986,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="37" selection-start="4567" selection-end="4567" vertical-scroll-proportion="0.6127451" vertical-offset="855" max-vertical-offset="2010">
+        <state line="56" column="29" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.22058824" vertical-offset="705" max-vertical-offset="2685">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#doShrink_Image#0;class#HW8#0" expanded="false" />
           </folding>
         </state>
       </provider>

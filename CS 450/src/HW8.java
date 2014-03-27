@@ -55,8 +55,6 @@ public class HW8 {
         BufferedImage img = CS450.openImage();
         WritableRaster imgRaster = img.getRaster();
         CS450.setImageA(img);
-        int width = img.getWidth();
-        int height = img.getHeight();
 
         int factor = Integer.parseInt(CS450.prompt("Enter the shrinking factor you'd like to use"));
         float factorFloat = (float)factor;
