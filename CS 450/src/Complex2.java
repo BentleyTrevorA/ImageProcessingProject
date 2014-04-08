@@ -139,10 +139,11 @@ public class Complex2 {
 
     /** return a formatted string of the complex number */
     public String toString() {
-        StringBuffer erg = new StringBuffer() ;
+        return "REAL: " + real + " IMAGINARY: " + imag;
+//        StringBuffer erg = new StringBuffer() ;
 
 //        erg.append(new PrintfFormat("%9.2e").sprintf(real)+"+"+new PrintfFormat("%9.2e").sprintf(imag)+"i") ;
 
-        return erg.toString() ;
+//        return erg.toString() ;
     }
 }

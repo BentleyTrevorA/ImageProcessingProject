@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="Minor removal of unused variables in HW8 functions">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab 8 Trevor Bentley.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audio/Who_will_enter.raw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audio/Who_will_enter.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audio/Who_will_enter8bit.raw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audio/helpme.raw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audio/helpme.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jcommon-1.0.21.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jfreechart-1.0.17.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/musicg-1.4.2.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/musicg-graphic-1.3.0.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audio/v3.raw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audio/v3.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Audio/AudioSampleReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Audio/AudioSampleTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Audio/AudioSampleWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HW9.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iml" afterPath="$PROJECT_DIR$/ImageProcessing.iml" />
+    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="Stuff added for Lab 9. Got a start on it, but things aren't quite working.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Plotter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Complex2.java" afterPath="$PROJECT_DIR$/src/Complex2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HW9.java" afterPath="$PROJECT_DIR$/src/HW9.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iws" afterPath="$PROJECT_DIR$/ImageProcessing.iws" />
     </list>
     <ignored path="ImageProcessing.iws" />
@@ -105,81 +91,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/HW9.java" line="150" class="HW9" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/HW9.java" line="108" class="HW9" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/HW9.java" line="32" class="HW9" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/HW9.java" line="58" class="HW9" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/HW9.java" line="28" class="HW9" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -193,11 +104,28 @@
       <file leaf-file-name="HW9.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HW9.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="14" selection-start="726" selection-end="726" vertical-scroll-proportion="0.3714789" vertical-offset="74" max-vertical-offset="2040">
+            <state line="15" column="0" selection-start="614" selection-end="614" vertical-scroll-proportion="0.30821916" vertical-offset="0" max-vertical-offset="960">
+              <folding>
+                <element signature="method#makeChart#0;class#HW9#0" expanded="false" />
+                <element signature="method#makeFFTChartMagnitudes#0;class#HW9#0" expanded="false" />
+                <element signature="method#makeFFTChartPowerSpectrum#0;class#HW9#0" expanded="false" />
+                <element signature="method#makeFilteredPowerSpectrumChart#0;class#HW9#0" expanded="false" />
+                <element signature="method#makeButterWorthChart#0;class#HW9#0" expanded="false" />
+                <element signature="method#butterWorthBytes#0;class#HW9#0" expanded="false" />
+                <element signature="e#5494#5553#0" expanded="false" />
+                <element signature="method#getComplexSamples#0;class#HW9#0" expanded="false" />
+                <element signature="method#readByteArray#0;class#HW9#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Plotter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Plotter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="25" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="795">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#reportHighestNonZero#0;class#HW9#0" expanded="false" />
-                <element signature="method#getComplexSamples#0;class#HW9#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -216,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ButtonHandler.java" />
         <option value="$PROJECT_DIR$/src/CS450.java" />
         <option value="$PROJECT_DIR$/src/HW.java" />
         <option value="$PROJECT_DIR$/src/HWBase.java" />
@@ -258,13 +185,15 @@
         <option value="$PROJECT_DIR$/src/FilterShell.java" />
         <option value="$PROJECT_DIR$/src/OperationsManager.java" />
         <option value="$PROJECT_DIR$/src/HW6.java" />
-        <option value="$PROJECT_DIR$/src/Complex2.java" />
         <option value="$PROJECT_DIR$/src/HW7.java" />
         <option value="$PROJECT_DIR$/src/Driver.java" />
         <option value="$PROJECT_DIR$/src/HW8.java" />
         <option value="$PROJECT_DIR$/src/Audio/AudioSampleWriter.java" />
         <option value="$PROJECT_DIR$/src/Audio/AudioSampleReader.java" />
         <option value="$PROJECT_DIR$/src/Audio/AudioSampleTester.java" />
+        <option value="$PROJECT_DIR$/src/data.java" />
+        <option value="$PROJECT_DIR$/src/Complex2.java" />
+        <option value="$PROJECT_DIR$/src/Plotter.java" />
         <option value="$PROJECT_DIR$/src/HW9.java" />
       </list>
     </option>
@@ -301,6 +230,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -353,8 +284,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,6 +306,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="SearchEverywhereHistory" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.HW9">
     <configuration default="false" name="Driver" type="Application" factoryName="Application" temporary="true">
@@ -511,6 +445,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -536,19 +483,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -716,7 +650,11 @@
       <created>1395891612216</created>
       <updated>1395891612216</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Stuff added for Lab 9. Got a start on it, but things aren't quite working.">
+      <created>1396757970717</created>
+      <updated>1396757970717</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -728,8 +666,9 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6039604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51925194" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46534654" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -740,11 +679,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19386107" sideWeight="0.60306644" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34543455" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6049005" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -776,7 +714,8 @@
     <MESSAGE value="Part 2 of Lab 8 Completed - Shrink Image" />
     <MESSAGE value="Part 3 of Lab 8 Completed - Rotate Image" />
     <MESSAGE value="Minor removal of unused variables in HW8 functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor removal of unused variables in HW8 functions" />
+    <MESSAGE value="Stuff added for Lab 9. Got a start on it, but things aren't quite working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Stuff added for Lab 9. Got a start on it, but things aren't quite working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -786,21 +725,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FFT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="40" selection-start="5843" selection-end="5843" vertical-scroll-proportion="0.0" vertical-offset="2305" max-vertical-offset="3225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyComplex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="22" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.2563536" vertical-offset="203" max-vertical-offset="2235" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Complex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="35" selection-start="1577" selection-end="1586" vertical-scroll-proportion="-7.9259257" vertical-offset="491" max-vertical-offset="2370" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HW.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="4" selection-start="339" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2835" />
@@ -1037,11 +961,6 @@
         <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Complex2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="593" selection-end="593" vertical-scroll-proportion="0.3321234" vertical-offset="162" max-vertical-offset="2295" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Fourier1D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="0" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.3321234" vertical-offset="1137" max-vertical-offset="1695" />
@@ -1061,25 +980,50 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/musicg-1.4.2.0.jar!/com/musicg/wave/Wave.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="73" selection-start="710" selection-end="710" vertical-scroll-proportion="0.023183925" vertical-offset="270" max-vertical-offset="930">
-          <folding />
-        </state>
+        <state line="20" column="73" selection-start="710" selection-end="710" vertical-scroll-proportion="0.023183925" vertical-offset="270" max-vertical-offset="930" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/javax/sound/sampled/AudioSystem.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="7187" selection-end="7187" vertical-scroll-proportion="0.8378378" vertical-offset="990" max-vertical-offset="1545">
+        <state line="98" column="0" selection-start="7187" selection-end="7187" vertical-scroll-proportion="0.8378378" vertical-offset="990" max-vertical-offset="1545" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jcommon-1.0.21.jar!/org/jfree/ui/ApplicationFrame.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Plotter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="25" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="795">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Complex2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="18" selection-start="2448" selection-end="2448" vertical-scroll-proportion="0.0" vertical-offset="1101" max-vertical-offset="2310">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW9.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="14" selection-start="726" selection-end="726" vertical-scroll-proportion="0.3714789" vertical-offset="74" max-vertical-offset="2040">
+        <state line="15" column="0" selection-start="614" selection-end="614" vertical-scroll-proportion="0.30821916" vertical-offset="0" max-vertical-offset="960">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#reportHighestNonZero#0;class#HW9#0" expanded="false" />
+            <element signature="method#makeChart#0;class#HW9#0" expanded="false" />
+            <element signature="method#makeFFTChartMagnitudes#0;class#HW9#0" expanded="false" />
+            <element signature="method#makeFFTChartPowerSpectrum#0;class#HW9#0" expanded="false" />
+            <element signature="method#makeFilteredPowerSpectrumChart#0;class#HW9#0" expanded="false" />
+            <element signature="method#makeButterWorthChart#0;class#HW9#0" expanded="false" />
+            <element signature="method#butterWorthBytes#0;class#HW9#0" expanded="false" />
+            <element signature="e#5494#5553#0" expanded="false" />
             <element signature="method#getComplexSamples#0;class#HW9#0" expanded="false" />
+            <element signature="method#readByteArray#0;class#HW9#0" expanded="false" />
           </folding>
         </state>
       </provider>
