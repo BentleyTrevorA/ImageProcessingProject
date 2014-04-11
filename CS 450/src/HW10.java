@@ -1,7 +1,7 @@
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 
-public class HW10 extends HWBase{
+public class HW10 extends HWBase {
     /*  Using compact:
         File:         blocks.pgm
         Size:         262.2 kB
@@ -22,6 +22,7 @@ public class HW10 extends HWBase{
     Calculate and encode the residual
     */
     public void doPredictiveCoding() {
+        System.out.println("FORWARD");
         BufferedImage inputImage = CS450.getImageA();
         int width = inputImage.getWidth();
         int height = inputImage.getHeight();
@@ -31,46 +32,53 @@ public class HW10 extends HWBase{
         WritableRaster out = outputImage.getRaster();
 
         int left, topLeft, top, topRight;
-        int predictiveValue;
+        int residual, predictedValue;
 
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 int value = in.getSample(x, y, 0);
 
-                if(y == 0 && x == 0) {
-                    predictiveValue = value;
+                // Top Left Pixel
+                if (y == 0 && x == 0) {
+                    predictedValue = 0;
                 }
-                else if(y == 0 && x > 0) {
-                    left = in.getSample(x-1, y, 0);
-                    predictiveValue = adjustValueToBeInRange(left - value);
+                // Top Row
+                else if (y == 0 && x > 0) {
+                    left = in.getSample(x - 1, y, 0);
+                    predictedValue = left;
                 }
-                else if(y > 0 && x == 0){
-                    top = in.getSample(x, y-1, 0);
+                // Left Column
+                else if (y > 0 && x == 0) {
+                    top = in.getSample(x, y - 1, 0);
                     topRight = in.getSample(x + 1, y - 1, 0);
-                    int avg = (top + topRight) / 2;
-                    predictiveValue = adjustValueToBeInRange(avg - value);
+
+                    predictedValue = (top + topRight) / 2;
                 }
-                else if(y > 0 && x == width -1) {
-                    left = in.getSample(x-1, y, 0);
+                // Right Column
+                else if (y > 0 && x == width - 1) {
+                    left = in.getSample(x - 1, y, 0);
                     topLeft = in.getSample(x - 1, y - 1, 0);
                     top = in.getSample(x, y - 1, 0);
 
-                    int avg = (left + topLeft + top) / 3;
-                    predictiveValue = adjustValueToBeInRange(avg - value);
+                    predictedValue = (left + topLeft + top) / 3;
                 }
+                // Center Section
                 else {
-                    left = in.getSample(x-1, y, 0);
+                    left = in.getSample(x - 1, y, 0);
                     topLeft = in.getSample(x - 1, y - 1, 0);
                     top = in.getSample(x, y - 1, 0);
                     topRight = in.getSample(x + 1, y - 1, 0);
 
-                    int avg = (left + topLeft + top + topRight) / 4;
-                    predictiveValue = adjustValueToBeInRange(avg - value);
+                    predictedValue = (left + topLeft + top + topRight) / 4;
                 }
 
-                out.setSample(x, y, 0, predictiveValue);
-                out.setSample(x, y, 1, predictiveValue);
-                out.setSample(x, y, 2, predictiveValue);
+                residual = adjustValueToBeInRange(value - predictedValue);
+                out.setSample(x, y, 0, residual);
+                out.setSample(x, y, 1, residual);
+                out.setSample(x, y, 2, residual);
+
+                if(y == 0)
+                    System.out.println(value + ", " + predictedValue + ", " + residual);
 
             }
         }
@@ -84,6 +92,7 @@ public class HW10 extends HWBase{
     }
 
     public void doReversePredictiveEncoding() {
+        System.out.println("REVERSE");
         BufferedImage inputImage = CS450.getImageB();
         int width = inputImage.getWidth();
         int height = inputImage.getHeight();
@@ -93,46 +102,53 @@ public class HW10 extends HWBase{
         WritableRaster out = outputImage.getRaster();
 
         int left, topLeft, top, topRight;
-        int predictiveValue;
+        int originalValue, predictedValue;
 
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
-                int value = in.getSample(x, y, 0);
+                int residual = in.getSample(x, y, 0);
 
-                if(y == 0 && x == 0) {
-                    predictiveValue = value;
+                // Top Left Pixel
+                if (y == 0 && x == 0) {
+                    predictedValue = 0;
                 }
-                else if(y == 0 && x > 0) {
-                    left = out.getSample(x-1, y, 0);
-                    predictiveValue = inverseAdjustValue(value + left);
+                // Top Row
+                else if (y == 0 && x > 0) {
+                    left = out.getSample(x - 1, y, 0);
+                    predictedValue = left;
                 }
-                else if(y > 0 && x == 0) {
-                    top = out.getSample(x, y-1, 0);
+                // Left Column
+                else if (y > 0 && x == 0) {
+                    top = out.getSample(x, y - 1, 0);
                     topRight = out.getSample(x + 1, y - 1, 0);
-                    int avg = (top + topRight) / 2;
-                    predictiveValue = inverseAdjustValue(value + avg);
+
+                    predictedValue = (top + topRight) / 2;
                 }
-                else if(y > 0 && x == width -1) {
-                    left = out.getSample(x-1, y, 0);
+                // Right Column
+                else if (y > 0 && x == width - 1) {
+                    left = out.getSample(x - 1, y, 0);
                     topLeft = out.getSample(x - 1, y - 1, 0);
                     top = out.getSample(x, y - 1, 0);
 
-                    int avg = (left + topLeft + top) / 3;
-                    predictiveValue = inverseAdjustValue(value + avg);
+                    predictedValue = (left + topLeft + top) / 3;
                 }
+                // Center Section
                 else {
-                    left = out.getSample(x-1, y, 0);
+                    left = out.getSample(x - 1, y, 0);
                     topLeft = out.getSample(x - 1, y - 1, 0);
                     top = out.getSample(x, y - 1, 0);
                     topRight = out.getSample(x + 1, y - 1, 0);
 
-                    int avg = (left + topLeft + top + topRight) / 4;
-                    predictiveValue = inverseAdjustValue(value + avg);
+                    predictedValue = (left + topLeft + top + topRight) / 4;
                 }
 
-                out.setSample(x, y, 0, predictiveValue);
-                out.setSample(x, y, 1, predictiveValue);
-                out.setSample(x, y, 2, predictiveValue);
+                originalValue = inverseAdjustValue(residual + predictedValue);
+                out.setSample(x, y, 0, originalValue);
+                out.setSample(x, y, 1, originalValue);
+                out.setSample(x, y, 2, originalValue);
+
+                if(y == 0)
+                    System.out.println(originalValue + ", " + predictedValue + ", " + residual);
             }
         }
 
@@ -140,14 +156,14 @@ public class HW10 extends HWBase{
     }
 
     private int adjustValueToBeInRange(int value) {
-        if(value < 0)
+        if (value < 0)
             return value + 256;
         else
             return value;
     }
 
     private int inverseAdjustValue(int value) {
-        if(value > 256)
+        if (value > 256)
             return value - 256;
         else
             return value;

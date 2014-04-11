@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HW10.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Driver.java" afterPath="$PROJECT_DIR$/src/Driver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HW10.java" afterPath="$PROJECT_DIR$/src/HW10.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iws" afterPath="$PROJECT_DIR$/ImageProcessing.iws" />
     </list>
     <ignored path="ImageProcessing.iws" />
@@ -103,28 +102,11 @@
       <file leaf-file-name="HW10.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HW10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="22" selection-start="4505" selection-end="4505" vertical-scroll-proportion="0.7859589" vertical-offset="1371" max-vertical-offset="2415">
+            <state line="45" column="43" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.6934931" vertical-offset="270" max-vertical-offset="2610">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#doClearImgA#0;class#HW10#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="29" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HW1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HW1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="37" selection-start="188" selection-end="1287" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1710">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -638,7 +620,11 @@
       <created>1396934362201</created>
       <updated>1396934362201</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Encoding back and forth works if you do the encoding 2 times.&#10;Ex: predict -&gt; reverse - predict - reverse">
+      <created>1397189295592</created>
+      <updated>1397189295592</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -700,7 +686,8 @@
     <MESSAGE value="Minor removal of unused variables in HW8 functions" />
     <MESSAGE value="Stuff added for Lab 9. Got a start on it, but things aren't quite working." />
     <MESSAGE value="Finished Project 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Project 9" />
+    <MESSAGE value="Encoding back and forth works if you do the encoding 2 times.&#10;Ex: predict -&gt; reverse - predict - reverse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Encoding back and forth works if you do the encoding 2 times.&#10;Ex: predict -&gt; reverse - predict - reverse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -978,27 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HWBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.033936653" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS450.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="23" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.14140272" vertical-offset="2470" max-vertical-offset="3375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Plotter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="25" selection-start="598" selection-end="598" vertical-scroll-proportion="0.33936653" vertical-offset="0" max-vertical-offset="884">
@@ -1013,11 +979,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CS450.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="23" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.2140411" vertical-offset="2470" max-vertical-offset="3375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HWBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.051369864" vertical-offset="0" max-vertical-offset="584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="29" selection-start="127" selection-end="127" vertical-scroll-proportion="0.12842466" vertical-offset="0" max-vertical-offset="584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HW10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="22" selection-start="4505" selection-end="4505" vertical-scroll-proportion="0.7859589" vertical-offset="1371" max-vertical-offset="2415">
+        <state line="45" column="43" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.6934931" vertical-offset="270" max-vertical-offset="2610">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#doClearImgA#0;class#HW10#0" expanded="false" />
           </folding>
         </state>
       </provider>
