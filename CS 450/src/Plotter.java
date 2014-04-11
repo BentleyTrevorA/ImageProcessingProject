@@ -12,23 +12,34 @@ public class Plotter extends ApplicationFrame {
         super(title);
     }
 
-    public void makeChart(byte[] bytes)
+    public void makeChart(byte[] values)
     {
         XYSeries series = new XYSeries("F(u)");
-        for(int i=0; i<bytes.length; i++)
+        for(int i=0; i<values.length; i++)
         {
-            series.add(i, bytes[i]);
+            series.add(i, values[i]);
         }
 
         finishChart(series);
     }
 
-    public void makeChart(double[] bytes)
+    public void makeChart(double[] values)
     {
         XYSeries series = new XYSeries("F(u)");
-        for(int i=0; i<bytes.length; i++)
+        for(int i=0; i<values.length; i++)
         {
-            series.add(i, bytes[i]);
+            series.add(i, values[i]);
+        }
+
+        finishChart(series);
+    }
+
+    public void makeChart(int[] values)
+    {
+        XYSeries series = new XYSeries("F(u)");
+        for(int i=0; i<values.length; i++)
+        {
+            series.add(i, values[i]);
         }
 
         finishChart(series);

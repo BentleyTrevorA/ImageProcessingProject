@@ -1,3 +1,6 @@
+import org.jfree.ui.RefineryUtilities;
+
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 
@@ -153,6 +156,55 @@ public class HW10 extends HWBase {
         }
 
         CS450.setImageA(outputImage);
+    }
+
+    public void doCopyAtoB() {
+        BufferedImage inputImage = CS450.getImageA();
+        int width = inputImage.getWidth();
+        int height = inputImage.getHeight();
+        WritableRaster in = inputImage.getRaster();
+
+        BufferedImage outputImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        WritableRaster out = outputImage.getRaster();;
+
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                int value = in.getSample(x, y, 0);
+
+                out.setSample(x, y, 0, value);
+                out.setSample(x, y, 1, value);
+                out.setSample(x, y, 2, value);
+            }
+        }
+
+        CS450.setImageB(outputImage);
+    }
+
+    public void doHistogramImgA() {
+        BufferedImage inputImage = CS450.getImageA();
+        int width = inputImage.getWidth();
+        int height = inputImage.getHeight();
+        WritableRaster in = inputImage.getRaster();
+
+        int[] histogram = new int[256];
+
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                int value = in.getSample(x, y, 0);
+                if(value >= 256 / 2) {
+                    histogram[value - (256 / 2)]++;
+                }
+                else
+                    histogram[value + 256 / 2]++;
+            }
+        }
+
+        Plotter plotter = new Plotter("Histogram");
+        plotter.makeChart(histogram);
+        plotter.pack();
+        RefineryUtilities.centerFrameOnScreen(plotter);
+        plotter.setVisible(true);
+        plotter.setSize(new Dimension(640, 480));
     }
 
     private int adjustValueToBeInRange(int value) {

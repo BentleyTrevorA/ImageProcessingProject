@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="">
+    <list default="true" id="7fb16dbb-08b4-45a0-a4f7-93ce1d4c3c30" name="Default" comment="Project 10 done&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/histograms/HistOriginal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/histograms/HistPredicted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/histograms/HistogramOriginal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/histograms/HistogramPredicted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab 9 Trevor Bentley.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/blocks.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/blocks.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/blocks2.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/blocks2.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/compact" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fractal.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/fractal.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/fractal.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/fractal2.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/fractal2.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/gull.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/gull.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/gull2.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/gull2.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/interfere.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/interfere.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/interfere2.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/interfere2.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/mysteryEqualized.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/mysteryEqualized.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/mysteryEqualized2.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/mysteryEqualized2.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/parrots.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/parrots.pgm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/parrots2.pgm.jz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Compress/parrots2.pgm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HW10.java" afterPath="$PROJECT_DIR$/src/HW10.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageProcessing.iws" afterPath="$PROJECT_DIR$/ImageProcessing.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Plotter.java" afterPath="$PROJECT_DIR$/src/Plotter.java" />
     </list>
     <ignored path="ImageProcessing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,14 +131,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="Plotter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Plotter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="39" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="885">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HW10.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HW10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="43" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.6934931" vertical-offset="270" max-vertical-offset="2610">
+            <state line="183" column="53" selection-start="6370" selection-end="6370" vertical-scroll-proportion="0.7705479" vertical-offset="2250" max-vertical-offset="3390">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#doClearImgA#0;class#HW10#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CS450.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CS450.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="192" column="34" selection-start="5946" selection-end="5946" vertical-scroll-proportion="0.0" vertical-offset="2470" max-vertical-offset="3375">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -171,9 +221,9 @@
         <option value="$PROJECT_DIR$/src/Audio/AudioSampleTester.java" />
         <option value="$PROJECT_DIR$/src/data.java" />
         <option value="$PROJECT_DIR$/src/Complex2.java" />
-        <option value="$PROJECT_DIR$/src/Plotter.java" />
         <option value="$PROJECT_DIR$/src/HW9.java" />
         <option value="$PROJECT_DIR$/src/Driver.java" />
+        <option value="$PROJECT_DIR$/src/Plotter.java" />
         <option value="$PROJECT_DIR$/src/HW10.java" />
       </list>
     </option>
@@ -241,6 +291,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageProcessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 450" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -624,7 +688,11 @@
       <created>1397189295592</created>
       <updated>1397189295592</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Predictively encode and reverse predictive encode works. Though the file ends up being bigger than the original for some reason.">
+      <created>1397192198164</created>
+      <updated>1397192198164</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -687,7 +755,8 @@
     <MESSAGE value="Stuff added for Lab 9. Got a start on it, but things aren't quite working." />
     <MESSAGE value="Finished Project 9" />
     <MESSAGE value="Encoding back and forth works if you do the encoding 2 times.&#10;Ex: predict -&gt; reverse - predict - reverse" />
-    <option name="LAST_COMMIT_MESSAGE" value="Encoding back and forth works if you do the encoding 2 times.&#10;Ex: predict -&gt; reverse - predict - reverse" />
+    <MESSAGE value="Predictively encode and reverse predictive encode works. Though the file ends up being bigger than the original for some reason." />
+    <option name="LAST_COMMIT_MESSAGE" value="Predictively encode and reverse predictive encode works. Though the file ends up being bigger than the original for some reason." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -948,44 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW9.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <folding>
-            <element signature="method#makeChart#0;class#HW9#0" expanded="false" />
-            <element signature="method#makeFFTChartMagnitudes#0;class#HW9#0" expanded="false" />
-            <element signature="method#makeFFTChartPowerSpectrum#0;class#HW9#0" expanded="false" />
-            <element signature="method#makeFilteredPowerSpectrumChart#0;class#HW9#0" expanded="false" />
-            <element signature="method#makeButterWorthChart#0;class#HW9#0" expanded="false" />
-            <element signature="method#butterWorthBytes#0;class#HW9#0" expanded="false" />
-            <element signature="e#5494#5553#0" expanded="false" />
-            <element signature="method#getComplexSamples#0;class#HW9#0" expanded="false" />
-            <element signature="method#readByteArray#0;class#HW9#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Plotter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="598" selection-end="598" vertical-scroll-proportion="0.33936653" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="37" selection-start="188" selection-end="1287" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS450.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="23" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.2140411" vertical-offset="2470" max-vertical-offset="3375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HWBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.051369864" vertical-offset="0" max-vertical-offset="584">
@@ -1000,9 +1031,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/HW9.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="23" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.6660959" vertical-offset="466" max-vertical-offset="1200">
+          <folding>
+            <element signature="method#makeChart#0;class#HW9#0" expanded="false" />
+            <element signature="method#makeFFTChartPowerSpectrum#0;class#HW9#0" expanded="false" />
+            <element signature="method#makeFilteredPowerSpectrumChart#0;class#HW9#0" expanded="false" />
+            <element signature="method#makeButterWorthChart#0;class#HW9#0" expanded="false" />
+            <element signature="method#butterWorthBytes#0;class#HW9#0" expanded="false" />
+            <element signature="e#5494#5553#0" expanded="false" />
+            <element signature="method#getComplexSamples#0;class#HW9#0" expanded="false" />
+            <element signature="method#readByteArray#0;class#HW9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Plotter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="39" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HW1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="8" selection-start="536" selection-end="663" vertical-scroll-proportion="0.30821916" vertical-offset="45" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CS450.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="34" selection-start="5946" selection-end="5946" vertical-scroll-proportion="0.0" vertical-offset="2470" max-vertical-offset="3375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HW10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="43" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.6934931" vertical-offset="270" max-vertical-offset="2610">
+        <state line="183" column="53" selection-start="6370" selection-end="6370" vertical-scroll-proportion="0.7705479" vertical-offset="2250" max-vertical-offset="3390">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#doClearImgA#0;class#HW10#0" expanded="false" />
